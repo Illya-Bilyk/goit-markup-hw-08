@@ -1,0 +1,170 @@
+:root {
+  --first-text-color: #212121;
+  --second-text-color: #757575;
+  --button-color: #2196f3;
+  --main-title-color: #ffffff;
+  --background-color: #2f303a;
+}
+
+body {
+  font-family: roboto;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* --------------header---------------- */
+.logo {
+  font-family: raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+ 
+}
+.logo-color-1 {
+  color: var(--button-color);
+}
+.logo-color-head{
+ color: var(--first-text-color);
+}
+
+.header {
+  font-family: roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+.nav-color {
+  color: var(--first-text-color);
+}
+.contacts-color {
+  color: var(--second-text-color);
+}
+
+.nav-color:hover,
+.nav-color:focus {
+  color: var(--button-color);
+}
+
+.contacts-color:hover,
+.contacts-color:focus {
+  color: var(--button-color);
+}
+
+/* -------------- hero------------ */
+
+.hero-title-bg {
+  background-color: var(--background-color);
+}
+
+.hero-title {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+
+.btn {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--main-title-color);
+  background-color: var(--button-color);
+}
+
+/* ------------ about us ------------ */
+'
+
+
+.about-title{
+font-family: Roboto;
+font-size: 14px;
+line-height: 1.1;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--first-text-color);
+}
+.about-text{
+font-family: Roboto;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: var(--second-text-color);
+}
+
+/* ------------ what we are doing? ------------ */
+
+
+.title {
+  font-family: Roboto;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+} 
+/* title for : doing and team */
+
+/* ------------ our team ------------ */
+
+
+.team-item-title{
+font-family: Roboto;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--first-text-color);
+}
+
+.team-item-text{
+font-family: Roboto;
+font-size: 16px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--second-text-color);
+}
+
+
+/* -------------- footer ------------ */
+
+.footer-bg{
+    background-color: var(--background-color);
+}
+
+.logo-color-foot{
+    color: var(--main-title-color);
+}
+.footer-link{
+font-family: Roboto;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+}
+.footer-map{
+    color: var(--main-title-color);
+}
+.footer-contacts {
+color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-map:focus,
+.footer-map:hover{
+    color: var(--button-color);
+}
+.footer-contacts:focus,
+.footer-contacts:hover{
+    color: var(--button-color);
+}
