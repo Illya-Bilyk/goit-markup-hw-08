@@ -270,18 +270,25 @@ body {
 
 /* -------------- footer ------------ */
 
-.footer-bg {
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--background-color);
 }
 
-.logo-color-footer {
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
   color: var(--main-title-color);
 }
-.footer-link {
+.footer-list {
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-map {
   color: var(--main-title-color);
