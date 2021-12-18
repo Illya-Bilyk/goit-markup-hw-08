@@ -7,10 +7,35 @@
   --main-background-color: #e5e5e5;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-family: 'roboto';
   background-color: var(--main-background-color);
+  width: 1600px;
 }
 .list {
   list-style: none;
@@ -28,7 +53,7 @@ body {
   cursor: pointer;
 }
 .container {
-  width: 1600px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -37,27 +62,18 @@ body {
 /* --------------header---------------- */
 .header {
   background-color: var(--main-title-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  margin-left: 200px;
-  margin-right: 200px;
-}
 .header-nav {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-list {
   display: flex;
-}
-
-.header-contacts {
-  display: flex;
-  justify-content: space-around;
 }
 
 .header-list {
@@ -99,7 +115,7 @@ body {
 
 .contacts:not(:last-child) {
   margin-right: 50px;
-  margin-left: 331px;
+  /* margin-left: 331px; */
 }
 
 .contacts:hover,
@@ -108,6 +124,13 @@ body {
 }
 
 /* -------------- hero------------ */
+.hero-container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .hero-title-bg {
   background-color: var(--background-color);
@@ -122,10 +145,31 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
+  width: 696px;
+  height: 120px;
+  margin: 0 auto;
+}
+.hero-button {
+  width: 216px;
+  height: 56px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
 }
 
 /* ------------ about us ------------ */
-
+.about-wrap {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-left: 0;
+}
+.about-item {
+  width: 270px;
+}
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
 .about-title {
   font-family: Roboto;
   font-size: 14px;
@@ -133,24 +177,45 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--first-text-color);
+  margin-top: 94px;
+  margin-bottom: 10px;
 }
 .about-text {
   font-family: Roboto;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  margin: 0 auto;
+  margin-bottom: 94px;
 }
 
 /* ------------ what we are doing? ------------ */
-
+.doing-wrap {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.doing-item {
+  margin-bottom: 94px;
+}
+.doing-item:not(:last-child) {
+  margin-right: 30px;
+}
+.doing-item:first-child {
+  padding-left: 0;
+}
 .title {
   font-family: Roboto;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
+  margin: 0 auto;
 }
 /* title for : doing and team */
 
