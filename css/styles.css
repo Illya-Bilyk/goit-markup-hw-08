@@ -35,7 +35,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-family: 'roboto';
   background-color: var(--main-background-color);
-  width: 1600px;
+  /* width: 1600px; */
 }
 .list {
   list-style: none;
@@ -105,8 +105,8 @@ body {
   margin-right: 50px;
 }
 
-.header-item:hover,
-.header-item:focus {
+.header-link:hover,
+.header-link:focus {
   color: var(--button-color);
 }
 .header-link-contacts {
@@ -115,11 +115,10 @@ body {
 
 .contacts:not(:last-child) {
   margin-right: 50px;
-  /* margin-left: 331px; */
 }
 
-.contacts:hover,
-.contacts:focus {
+.header-link-contacts:hover,
+.header-link-contacts:focus {
   color: var(--button-color);
 }
 
@@ -158,11 +157,13 @@ body {
 }
 
 /* ------------ about us ------------ */
+.about {
+  background-color: var(--main-title-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .about-wrap {
   display: flex;
-  margin-left: 200px;
-  margin-right: 200px;
-  padding-left: 0;
 }
 .about-item {
   width: 270px;
@@ -177,7 +178,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--first-text-color);
-  margin-top: 94px;
   margin-bottom: 10px;
 }
 .about-text {
@@ -186,28 +186,24 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  margin: 0 auto;
-  margin-bottom: 94px;
 }
 
 /* ------------ what we are doing? ------------ */
+.doing {
+  padding-bottom: 94px;
+  background-color: var(--main-title-color);
+}
 .doing-wrap {
   display: flex;
   align-items: center;
-  margin-left: 200px;
-  margin-right: 200px;
   margin-top: 50px;
   margin-bottom: 0;
 }
-.doing-item {
-  margin-bottom: 94px;
-}
+
 .doing-item:not(:last-child) {
   margin-right: 30px;
 }
-.doing-item:first-child {
-  padding-left: 0;
-}
+
 .title {
   font-family: Roboto;
   font-size: 36px;
@@ -221,6 +217,15 @@ body {
 
 /* ------------ our team ------------ */
 
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-title {
+  margin-bottom: 50px;
+}
+
 .team-item-title {
   font-family: Roboto;
   font-weight: 500;
@@ -229,6 +234,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
+  margin-bottom: 10px;
 }
 
 .team-item-text {
@@ -238,6 +244,28 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+}
+.team-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+.team-item {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+/* .team-item:not(:last-child) {
+  margin-right: 30px;
+} */
+.team-item-content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-title-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* -------------- footer ------------ */
