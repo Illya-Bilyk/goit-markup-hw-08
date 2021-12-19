@@ -203,6 +203,7 @@ body {
 /* ------------ what we are doing? ------------ */
 .doing {
   background-color: var(--main-title-color);
+  padding-bottom: 94px;
 }
 .doing-wrap {
   display: flex;
