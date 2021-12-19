@@ -138,6 +138,14 @@ body {
 
 .hero-title-bg {
   background-color: var(--background-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* flex-grow: 1;
+  height: 100%;
+  width: 100%; */
 }
 
 .hero-title {
