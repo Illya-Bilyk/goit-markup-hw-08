@@ -126,6 +126,21 @@ body {
 .header-link-contacts:focus {
   color: var(--button-color);
 }
+.header-link-contacts:hover .header-icon,
+.header-link-contacts:focus .header-icon {
+  fill: var(--button-color);
+}
+.header-link-contacts {
+  display: flex;
+}
+
+.header-icon {
+  fill: var(--second-text-color);
+  margin-right: 10px;
+}
+/* .header-icon:hover {
+  fill: var(--button-color);
+} */
 
 /* -------------- hero------------ */
 .hero-container {
