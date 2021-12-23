@@ -464,6 +464,49 @@ body {
   background-color: var(--button-color);
 }
 
+/* -------------- modal ------------------ */
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 300ms, visibility 3000ms;
+}
+.modal {
+  width: 528px;
+  height: 581px;
+  position: absolute;
+  background-color: var(--main-title-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  transform: scale(1) skew(0) translate(-50%, -50%);
+
+  transition: transform 300ms;
+}
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: var(--main-title-color);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.backdrop.is-hidden .modal {
+  transform: scale(0.5) skew(20deg, 70deg) translate(100px, 100px);
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* ----------- portfolio ----------------- */
 .portfolio {
   background-color: var(--main-title-color);
