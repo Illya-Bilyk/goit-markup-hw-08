@@ -1,3 +1,8 @@
+/* .as {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
 :root {
   --first-text-color: #212121;
   --second-text-color: #757575;
@@ -108,10 +113,25 @@ body {
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
+.header-item {
+  position: relative;
+}
 
+.header-link.current::after {
+  content: '';
+  height: 4px;
+  width: 100%;
+  background-color: var(--button-color);
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -33px;
+}
 .header-link:hover,
 .header-link:focus {
   color: var(--button-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link-contacts {
   color: var(--second-text-color);
@@ -124,10 +144,14 @@ body {
 .header-link-contacts:hover,
 .header-link-contacts:focus {
   color: var(--button-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link-contacts:hover .header-icon,
 .header-link-contacts:focus .header-icon {
   fill: var(--button-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link-contacts {
   display: flex;
@@ -225,7 +249,7 @@ body {
   background-color: var(--main-title-color);
   padding-bottom: 94px;
 }
-.doing-wrap {
+.doing-list {
   display: flex;
   align-items: center;
   margin-top: 50px;
@@ -234,6 +258,27 @@ body {
 
 .doing-item:not(:last-child) {
   margin-right: 30px;
+}
+.doing-item {
+  position: relative;
+}
+.doing-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
+  color: var(--main-title-color);
+  background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .title {
@@ -328,11 +373,15 @@ body {
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover .team-icon,
 .team-social-link:focus .team-icon {
   fill: var(--main-title-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ----------------- clients ------------ */
@@ -379,10 +428,14 @@ body {
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
   fill: var(--button-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-item:hover,
 .clients-item:focus {
   border-color: var(--button-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* -------------- footer ------------ */
 
@@ -416,10 +469,14 @@ body {
 .footer-map:focus,
 .footer-map:hover {
   color: var(--button-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contacts:focus,
 .footer-contacts:hover {
   color: var(--button-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-container {
   display: flex;
@@ -462,6 +519,8 @@ body {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--button-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -------------- modal ------------------ */
@@ -536,6 +595,8 @@ body {
   background-color: var(--button-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-title {
@@ -593,4 +654,6 @@ body {
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
