@@ -674,8 +674,10 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--main-title-color);
   transform: translateY(100%);
-  transition: transform 300ms linear;
+  transition: transform 300ms;
 }
 .portfolio-item:hover .portfolio-wrap-text {
   transform: translateY(0%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
