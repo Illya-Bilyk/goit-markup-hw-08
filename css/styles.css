@@ -61,7 +61,18 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /* --------------header---------------- */
 .header {
   background-color: var(--main-title-color);
@@ -585,6 +596,7 @@ body {
   transform: scale(1) skew(0) translate(-50%, -50%);
 
   transition: transform 300ms;
+  padding: 40px;
 }
 .modal-close {
   position: absolute;
@@ -603,6 +615,75 @@ body {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+.modal-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--second-text-color);
+}
+.modal-title {
+  width: 448px;
+  height: 23px;
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  color: var(--first-text-color);
+}
+.modal-form-field {
+  margin-bottom: 10px;
+}
+.modal-input {
+  margin-top: 4px;
+
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 40px;
+  padding-right: 25px;
+}
+.modal-input-wrap {
+  position: relative;
+}
+.modal-icon {
+  position: absolute;
+  top: 56%;
+  transform: translateY(-56%);
+  left: 15px;
+  transition: fill 300ms linear;
+}
+.modal-text {
+  margin-top: 4px;
+  width: 448px;
+  height: 120px;
+  outline: none;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 16px;
+}
+.modal-check {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.modal-check-text {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ----------- portfolio ----------------- */
