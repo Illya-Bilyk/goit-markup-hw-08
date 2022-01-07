@@ -81,17 +81,17 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.header-nav {
+.header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header-list {
+.header__list {
   display: flex;
 }
 
-.header-list {
+.header__list {
   font-family: roboto;
   font-weight: 500;
   font-size: 14px;
@@ -109,21 +109,21 @@ body {
   color: var(--first-text-color);
   margin-right: 93px;
 }
-.logo-color-first {
+.logo__first-color {
   color: var(--button-color);
 }
-.header-link {
+.header__link {
   color: var(--first-text-color);
 }
 
-.header-item:not(:last-child) {
+.header__item:not(:last-child) {
   margin-right: 50px;
 }
-.header-item {
+.header__item {
   position: relative;
 }
 
-.header-link.current::after {
+.header__link.current::after {
   content: '';
   height: 4px;
   width: 100%;
@@ -133,50 +133,50 @@ body {
   left: 0;
   bottom: -33px;
 }
-.header-link:hover,
-.header-link:focus {
+.header__link:hover,
+.header__link:focus {
   color: var(--button-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link-contacts {
+.header__link--contacts {
   color: var(--second-text-color);
 }
 
-.contacts:not(:last-child) {
+.header__contacts:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-link-contacts:hover,
-.header-link-contacts:focus {
+.header__link--contacts:hover,
+.header__link--contacts:focus {
   color: var(--button-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link-contacts:hover .header-icon,
-.header-link-contacts:focus .header-icon {
+.header__link--contacts:hover .header__icon,
+.header__link--contacts:focus .header__icon {
   fill: var(--button-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link-contacts {
+.header__link--contacts {
   display: flex;
 }
 
-.header-icon {
+.header__icon {
   fill: var(--second-text-color);
   margin-right: 10px;
 }
 
 /* -------------- hero------------ */
-.hero-container {
+.hero__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.hero-title-bg {
+.hero__title--bg {
   background-color: var(--background-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg.png);
@@ -187,7 +187,7 @@ body {
   padding-bottom: 200px;
 }
 
-.hero-title {
+.hero__title {
   font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
@@ -200,7 +200,7 @@ body {
 
   margin: 0 auto;
 }
-.hero-button {
+.hero__button {
   width: 216px;
   height: 56px;
   border-radius: 4px;
