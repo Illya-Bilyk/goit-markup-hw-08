@@ -523,11 +523,19 @@
           </div>
 
           <div class="modal-form-field">
-            <input type="checkbox" name="policy" id="modal-check" class="modal-check vh" />
-            <label for="policy" class="modal-check-text">
+            <input
+              type="checkbox"
+              name="policy"
+              id="modal-check"
+              class="modal-check visually-hidden"
+            />
+            <label for="modal-check" class="modal-check-text">
               Соглашаюсь с рассылкой и принимаю
-              <span> <a href="" class="link"> Условия договора</a></span>
+              <span> <a href="" class="modal-policy-text"> Условия договора</a></span>
             </label>
+          </div>
+          <div class="modal-btn">
+            <button type="submit" class="modal-submit-btn">Отправить</button>
           </div>
         </form>
       </div>
