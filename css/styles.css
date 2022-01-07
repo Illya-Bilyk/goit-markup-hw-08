@@ -608,8 +608,11 @@ body {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.modal-close:hover .icon-close {
+.modal-close:hover .icon-close,
+.modal-close:focus .icon-close {
   fill: var(--button-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden .modal {
   transform: scale(0.5) skew(20deg, 70deg) translate(100px, 100px);
