@@ -20,33 +20,28 @@
 }
 .footer__item--map {
   color: var(--main-title-color);
+
+  &:focus,
+  &:hover {
+    color: var(--button-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .footer__item--contacts {
   color: rgba(255, 255, 255, 0.6);
+
+  &:focus,
+  &:hover {
+    color: var(--button-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.footer__item--map:focus,
-.footer__item--map:hover {
-  color: var(--button-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer__item--contacts:focus,
-.footer__item--contacts:hover {
-  color: var(--button-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .footer__container {
   display: flex;
 }
-
-.footer-social {
-  display: flex;
-  flex-direction: column;
-  margin-left: 70px;
-}
-
 .footer--title {
   font-family: Roboto;
   font-size: 14px;
@@ -55,6 +50,12 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
 }
 
 .footer-social__list {
@@ -68,18 +69,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .footer-social__item:not(:last-child) {
   margin-right: 10px;
 }
 .footer--icon {
   fill: var(--main-title-color);
-}
-.footer-social__link:hover,
-.footer-social__link:focus {
-  background-color: var(--button-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscribe {
@@ -91,12 +93,6 @@
 .footer-subscribe__btn {
   width: 200px;
   height: 50px;
-  color: var(--main-title-color);
-  background-color: var(--button-color);
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
   display: flex;
   align-items: center;
   justify-content: center;
