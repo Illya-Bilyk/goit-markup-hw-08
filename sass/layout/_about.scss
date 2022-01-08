@@ -1,0 +1,39 @@
+.about {
+  background-color: var(--main-title-color);
+}
+.about__list {
+  display: flex;
+}
+.about__item {
+  width: 270px;
+}
+.about__item:not(:last-child) {
+  margin-right: 30px;
+}
+.about__item--title {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--first-text-color);
+  margin-bottom: 10px;
+}
+.about__item--text {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+.about__item--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+}
