@@ -9,11 +9,11 @@
   margin-bottom: 0;
 }
 
-.doing__item:not(:last-child) {
-  margin-right: 30px;
-}
 .doing__item {
   position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .doing--text {
   position: absolute;
