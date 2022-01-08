@@ -13,9 +13,6 @@
 
 .header__list {
   display: flex;
-}
-
-.header__list {
   font-family: roboto;
   font-weight: 500;
   font-size: 14px;
@@ -38,56 +35,54 @@
 }
 .header__link {
   color: var(--first-text-color);
+
+  &.current::after {
+    content: '';
+    height: 4px;
+    width: 100%;
+    background-color: var(--button-color);
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -33px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--button-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.header__item:not(:last-child) {
-  margin-right: 50px;
-}
 .header__item {
   position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
-.header__link.current::after {
-  content: '';
-  height: 4px;
-  width: 100%;
-  background-color: var(--button-color);
-  border-radius: 2px;
-  position: absolute;
-  left: 0;
-  bottom: -33px;
-}
-.header__link:hover,
-.header__link:focus {
-  color: var(--button-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header__link--contacts {
-  color: var(--second-text-color);
-}
-
-.header__item--contacts:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header__link--contacts:hover,
-.header__link--contacts:focus {
-  color: var(--button-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header__link--contacts:hover .header--icon,
-.header__link--contacts:focus .header--icon {
-  fill: var(--button-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .header__link--contacts {
   display: flex;
+  color: var(--second-text-color);
+  &:hover,
+  &:focus {
+    color: var(--button-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-
 .header--icon {
   fill: var(--second-text-color);
   margin-right: 10px;
+
+  .header__link--contacts:hover &,
+  .header__link--contacts:focus & {
+    fill: var(--button-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.header__item--contacts:not(:last-child) {
+  margin-right: 50px;
 }
