@@ -83,7 +83,7 @@
   padding-left: 40px;
   padding-right: 25px;
 }
-.modal--icon {
+.modal-icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -111,15 +111,15 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__input--wrap {
+.modal__input-wrap {
   position: relative;
 }
 
-.modal__link--text {
+.modal__link-text {
   margin-left: 3px;
   color: var(--button-color);
 }
-.modal__check--text {
+.modal__check-text {
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.71;
