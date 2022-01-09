@@ -12,7 +12,7 @@
   }
 }
 
-.about__item--title {
+.about__item-title {
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.1;
@@ -21,7 +21,7 @@
   color: var(--first-text-color);
   margin-bottom: 10px;
 }
-.about__item--text {
+.about__item-text {
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.71;
@@ -29,7 +29,7 @@
   color: var(--second-text-color);
 }
 
-.about__item--icon {
+.about__item-icon {
   display: flex;
   justify-content: center;
   align-items: center;
