@@ -62,7 +62,7 @@
   }
 }
 
-.header__link--contacts {
+.header__link-contacts {
   display: flex;
   color: var(--second-text-color);
   &:hover,
@@ -72,17 +72,17 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-.header--icon {
+.header-icon {
   fill: var(--second-text-color);
   margin-right: 10px;
 
-  .header__link--contacts:hover &,
-  .header__link--contacts:focus & {
+  .header__link-contacts:hover &,
+  .header__link-contacts:focus & {
     fill: var(--button-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-.header__item--contacts:not(:last-child) {
+.header__item-contacts:not(:last-child) {
   margin-right: 50px;
 }
