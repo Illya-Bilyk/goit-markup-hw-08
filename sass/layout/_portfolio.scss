@@ -53,15 +53,28 @@
   justify-content: start;
   @media screen and (min-width: 768px) {
     justify-content: center;
+    flex-wrap: nowrap;
   }
   margin-right: -8px;
-  margin-bottom: -15px;
+  margin-bottom: -8px;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
 .portfolio__item-btn {
-  flex-basis: calc((100% - 4 * 15px) / 4);
-  margin-right: 8px;
-  margin-bottom: 15px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 8px;
+    flex-basis: calc((100% - 4 * 8px) / 4);
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
 }
 // .portfolio__item-btn {
 //   flex-basis: calc((100% - 3 * 8px) / 3);
