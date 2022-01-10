@@ -1,7 +1,9 @@
 .portfolio {
   background-color: var(--main-title-color);
-  padding-top: 100px;
-  padding-bottom: 94px;
+  @media screen and(min-width:1200px) {
+    padding-top: 100px;
+    padding-bottom: 94px;
+  }
 }
 .portfolio-btn {
   font-family: Roboto;
@@ -52,10 +54,15 @@
   display: flex;
   justify-content: center;
   margin-bottom: 56px;
+  // margin-right: -8px;
 }
 .portfolio__item-btn:not(:last-child) {
   margin-right: 8px;
 }
+// .portfolio__item-btn {
+//   flex-basis: calc((100% - 3 * 8px) / 3);
+//   margin-right: 8px;
+// }
 
 .portfolio__list {
   display: flex;
