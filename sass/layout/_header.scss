@@ -1,7 +1,18 @@
 .header {
   background-color: var(--main-title-color);
-  padding-top: 24px;
-  padding-bottom: 24px;
+  @media screen and (min-width: 480px) {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
   border-bottom: 1px solid #ececec;
 }
 
