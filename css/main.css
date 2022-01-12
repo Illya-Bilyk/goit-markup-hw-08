@@ -1313,6 +1313,19 @@ body {
   margin-right: -30px;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio__list {
+    margin-top: 30px;
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__list {
+    margin-top: 50px;
+  }
+}
+
 .portfolio__item {
   flex-basis: calc((100% - 1 * 30px) / 1);
   margin-bottom: 30px;
